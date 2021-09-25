@@ -76,6 +76,51 @@ li {
 	list-style-type: none;
 	cursor: pointer;
 }
+/*hamburger*/
+.menu-btn {
+	position:static;
+	z-index:3;
+	height: 60px;
+	width: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.menu-btn-hamburger {
+	height: 4px;
+	width: 35px;
+	background-color: black;
+	border-radius: 40px;
+	transition: all 500ms ease-in-out;
+}
+.menu-btn-hamburger::before,
+.menu-btn-hamburger::after {
+	content: "";
+	position: absolute;
+	height: 4px;
+	width:35px;
+	background-color: black;
+	border-radius: 40px;
+	transition: all 500ms ease-in-out;
+}
+.menu-btn-hamburger::before {
+	transform: translateY(-12px);
+}
+.menu-btn-hamburger::after {
+	transform: translateY(12px);
+}
+.menu-btn.open .menu-btn-hamburger {
+	transform: translateX(-50px);
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.menu-btn.open .menu-btn-hamburger::before {
+	transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn-hamburger::after {
+	transform: rotate(-45deg) translate(35px, 35px);
+}
 /*navbar*/
 .container {
 	width: var(--container-width);
@@ -87,12 +132,15 @@ li {
 }
 header {
 	height: 5rem;
+	width:90%;
+	margin:auto;
 }
 .main-nav {
-	padding-top: 1rem;
+	padding-top: 0.5rem;
+
 }
 .nav-list {
-	display: none;
+	display:none;
 }
 .nav-right {
 	display: none;
@@ -134,9 +182,6 @@ header {
 	font-weight: bold;
 	font-size: 1.1rem;
 	border-radius: 10px;
-}
-.s1-grid-item div {
-	text-align: center;
 }
 
 /*Tech stack*/
@@ -382,7 +427,7 @@ input[type='radio'] {
 	:root {
 		--container-width: 80%;
 	}
-	
+
 	.hero-img {
 		height: 400px;
 	}
@@ -392,7 +437,6 @@ input[type='radio'] {
 	.s1-grid-item h1,
 	h3 {
 		line-height: 1.1;
-		
 	}
 	.s1-grid-item h3 {
 		font-size: 2rem;
@@ -401,7 +445,6 @@ input[type='radio'] {
 		font-size: 3.6rem;
 	}
 	.s1-grid-item p {
-		
 		line-height: 1.6;
 	}
 	.line2 {
