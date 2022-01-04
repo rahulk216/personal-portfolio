@@ -19,9 +19,9 @@
 	--main-font-family: 'SF-Regular', sans-serif;
 	--bold-font-family: 'SF-Bold', sans-serif;
 	--main-font-color: #444;
-	--sub-font-color: #6c63ff;
+	--sub-font-color: #25269D;
 	--sub-font-color-2: #3f3d56;
-	--sub-color: #d0cde1;
+	--sub-color: #268bca;
 	--sub-color2: rgb(238, 236, 247);
 }
 textarea,
@@ -36,7 +36,7 @@ input[type='text'] {
 	display: block;
 }
 .wave-path {
-	animation: wave-animation 3s linear infinite alternate;
+	animation: wave-animation 2.5s linear infinite alternate;
 }
 a,
 a:focus,
@@ -148,7 +148,95 @@ header {
 .mobile-toggle i {
 	font-size: 1.8rem;
 }
+/*Chevron*/
+.chevron-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 25vh;
+  }
+  
+  .chevron {
+	position: absolute;
+	width: 2.1rem;
+	height: 0.48rem;
+	opacity: 0;
+	transform: scale(0.3);
+	-webkit-animation: move-chevron 3s ease-out infinite;
+			animation: move-chevron 3s ease-out infinite;
+  }
+  
+  .chevron:first-child {
+	-webkit-animation: move-chevron 3s ease-out 1s infinite;
+			animation: move-chevron 3s ease-out 1s infinite;
+  }
+  
+  .chevron:nth-child(2) {
+	-webkit-animation: move-chevron 3s ease-out 2s infinite;
+			animation: move-chevron 3s ease-out 2s infinite;
+  }
+  
+  .chevron:before,
+  .chevron:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	background: #2c3e50;
+  }
+  
+  .chevron:before {
+	left: 0;
+	transform: skewY(30deg);
+  }
+  
+  .chevron:after {
+	right: 0;
+	width: 50%;
+	transform: skewY(-30deg);
+  }
+  
+  @-webkit-keyframes move-chevron {
+	25% {
+	  opacity: 1;
+	}
+	33.3% {
+	  opacity: 1;
+	  transform: translateY(2.28rem);
+	}
+	66.6% {
+	  opacity: 1;
+	  transform: translateY(3.12rem);
+	}
+	100% {
+	  opacity: 0;
+	  transform: translateY(4.8rem) scale(0.5);
+	}
+  }
+  
+  @keyframes move-chevron {
+	25% {
+	  opacity: 1;
+	}
+	33.3% {
+	  opacity: 1;
+	  transform: translateY(2.28rem);
+	}
+	66.6% {
+	  opacity: 1;
+	  transform: translateY(3.12rem);
+	}
+	100% {
+	  opacity: 0;
+	  transform: translateY(4.8rem) scale(0.5);
+	}
+  }
 /*Hero*/
+.hero{
+	height:100vh;
+}
 .line2 {
 	font-size: 1.3rem;
 }
@@ -157,6 +245,7 @@ header {
 	grid-template-columns: repeat(var(--no-of-grids), 1fr);
 	grid-gap: 2rem;
 	place-items: center;
+	margin-top: 4rem
 }
 .s1-grid-item {
 	grid-column: span 6;
