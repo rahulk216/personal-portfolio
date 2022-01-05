@@ -23,7 +23,9 @@
 			<a href="https://github.com/rahulk216"
 				><i class="fab fa-github"></i
 			></a>
-			<a href="https://wa.me/+918310461908"><i class="fab fa-whatsapp"></i></a>
+			<a href="https://wa.me/+918310461908"
+				><i class="fab fa-whatsapp"></i
+			></a>
 		</div>
 		<header>
 			<nav class="main-nav">
@@ -38,10 +40,26 @@
 					<div>
 						<span class="hamburger"><i class="fas fa-times"></i></span>
 					</div>
-					<li class="nav-item"><a class="hover-underline-animation" href="/index.html">Home</a></li>
-					<li class="nav-item"><a class="hover-underline-animation"  href="/#aboutme">About</a></li>
-					<li class="nav-item"><a class="hover-underline-animation"  href="/#projects">Projects</a></li>
-					<li class="nav-item"><a class="hover-underline-animation"  href="/#contact">Contact</a></li>
+					<li class="nav-item">
+						<a class="hover-underline-animation" href="/index.html"
+							>Home</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="hover-underline-animation" href="/#aboutme"
+							>About</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="hover-underline-animation" href="/#projects"
+							>Projects</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="hover-underline-animation" href="/#contact"
+							>Contact</a
+						>
+					</li>
 				</ul>
 			</nav>
 			<div class="nav-right"></div>
@@ -128,6 +146,7 @@
 								<li>ReactJS</li>
 								<li>NextJS</li>
 								<li>NodeJS</li>
+								<li>PHP</li>
 								<li>MySQL</li>
 								<li>MongoDB</li>
 								<li>Cassandra</li>
@@ -162,7 +181,7 @@
 		<section id="projects" class="projects">
 			<div class="project container">
 				<h1>Projects</h1>
-				<dwiv class="project-grid">
+				<div class="project-grid">
 					<div class="project-item">
 						<div class="project-img">
 							<img src="/images/fatfox.png" />
@@ -171,11 +190,12 @@
 					<div class="project-item">
 						<h3>Fatfox ( Cloud Kitchen )</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Aperiam consequatur molestias distinctio asperiores porro
-							beatae libero atque repudiandae nisi, est ratione rerum
-							iusto consectetur aliquid temporibus. Nam accusantium
-							repudiandae quidem.
+							An Ecommerce cloud kitchen application where in a user can
+							order food . Consists of an admin dashboard where accepting
+							the order takes place in 3 different steps . from Admin ->
+							Kitchen -> Delivery and notifying the user in realtime
+							using <strong>socket.io</strong>.
+							<strong>Paytm payment Gateway</strong> is enabled .
 						</p>
 						<div class="tech-stack-used">
 							<div class="stack">Tech Stack :</div>
@@ -187,9 +207,11 @@
 								<li>Zustand</li>
 							</ul>
 						</div>
-						<button><i class="fab fa-github"></i> Github</button>
+						<a href="https://github.com/rahulk216/fatfox"
+							><button><i class="fab fa-github"></i> Github</button></a
+						>
 					</div>
-				</dwiv>
+				</div>
 				<div class="project-grid">
 					<div class="project-item order1">
 						<div class="project-img">
@@ -199,11 +221,12 @@
 					<div class="project-item order2">
 						<h3>Foxwel Manager</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Aperiam consequatur molestias distinctio asperiores porro
-							beatae libero atque repudiandae nisi, est ratione rerum
-							iusto consectetur aliquid temporibus. Nam accusantium
-							repudiandae quidem.
+							An Event management Application for Foxwel Productions for
+							managing all their Event .A dashboard built with CoreUI
+							component with functionalities having all calculations
+							regarding the events .Different functionalities include
+							Creating ,Editing , setting status ,deleting ,Price
+							calculation are done backend.
 						</p>
 						<div class="tech-stack-used">
 							<div class="stack">Tech Stack :</div>
@@ -215,7 +238,9 @@
 								<li>Redux</li>
 							</ul>
 						</div>
-						<button><i class="fab fa-github"></i> Github</button>
+						<a href="https://github.com/rahulk216/foxwel-manager"
+							><button><i class="fab fa-github"></i>Github</button></a
+						>
 					</div>
 				</div>
 				<div class="project-grid">
@@ -227,11 +252,11 @@
 					<div class="project-item">
 						<h3>Dev Hub</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Aperiam consequatur molestias distinctio asperiores porro
-							beatae libero atque repudiandae nisi, est ratione rerum
-							iusto consectetur aliquid temporibus. Nam accusantium
-							repudiandae quidem.
+							A self made social media application for devs .Basic
+							functionalities include Creating user ,Loggin in using
+							<strong>JWT token</strong> . <strong>Github api</strong> is
+							used to show repos of all users . Creating Post which can
+							be liked/disliked and commented by other users .
 						</p>
 						<div class="tech-stack-used">
 							<div class="stack">Tech Stack :</div>
@@ -242,7 +267,46 @@
 								<li>NodeJS</li>
 							</ul>
 						</div>
-						<button><i class="fab fa-github"></i> Github</button>
+						<a href="https://github.com/rahulk216/mern"
+							><button><i class="fab fa-github"></i> Github</button></a
+						>
+					</div>
+				</div>
+				<div class="project-grid">
+					<div class="project-item order1">
+						<div class="project-img">
+							<img src="/images/church.png" />
+						</div>
+					</div>
+					<div class="project-item order2">
+						<h3>Vishranthi Church ( Portfolio )</h3>
+						<p>
+							A simple portfolio website for
+							<strong>CSI vishranthi church</strong>. A simple admin side
+							is created to upload Events regarding church . Grid layout
+							is being used to lay the content on the webpage
+						</p>
+						<p>
+							Link for the website :
+							<strong>
+								<a href="https://vishranthichurch.co.in/">https://vishranthichurch.co.in/</a>
+							</strong
+							>
+						</p>
+
+						<div class="tech-stack-used">
+							<div class="stack">Tech Stack :</div>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JS</li>
+								<li>PHP</li>
+								<li>MYSQL</li>
+							</ul>
+						</div>
+						<a href="https://github.com/rahulk216/church-frontend"
+							><button><i class="fab fa-github"></i>Github</button></a
+						>
 					</div>
 				</div>
 			</div>
