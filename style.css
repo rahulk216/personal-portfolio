@@ -296,7 +296,9 @@ header {
 	font-size: 1.1rem;
 	border-radius: 10px;
 }
-
+.connect-btn{
+	margin-top: 1rem;
+}
 /*Tech stack*/
 .about-me {
 	background-color: var(--sub-color2);
