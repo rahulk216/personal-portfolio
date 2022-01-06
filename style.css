@@ -43,7 +43,7 @@ a:focus,
 a:hover,
 a:active {
 	text-decoration: none;
-	color:var(--main-font-color);
+	color: var(--main-font-color);
 }
 @keyframes wave-animation {
 	0% {
@@ -147,28 +147,25 @@ header {
 	border-radius: 0 20px 20px 0;
 	transition: all 650ms ease-in-out;
 }
-.nav-item a{
+.nav-item a {
 	color: var(--sub-color2);
 }
-.menu-hamburger{
-	margin:1.2rem;
-	
+.menu-hamburger {
+	margin: 1.2rem;
 }
-.menu-hamburger i{
-	font-size:4rem;
-
+.menu-hamburger i {
+	font-size: 4rem;
 }
-.hamburger{
+.hamburger {
 	color: var(--sub-color2);
-	position:absolute;
-	top:30px;
-	left:30px;
-	
+	position: absolute;
+	top: 30px;
+	left: 30px;
 }
-.hamburger i{
-	font-size:2rem;
+.hamburger i {
+	font-size: 2rem;
 }
-.nav-list.active{
+.nav-list.active {
 	left: 0;
 }
 .nav-right {
@@ -182,9 +179,9 @@ header {
 	display: inline-block;
 	position: relative;
 	color: #0087ca;
-  }
-  
-  .hover-underline-animation:after {
+}
+
+.hover-underline-animation:after {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -195,12 +192,12 @@ header {
 	background-color: var(--main-font-color);
 	transform-origin: bottom right;
 	transition: transform 0.5s ease-out;
-  }
-  
-  .hover-underline-animation:hover:after {
+}
+
+.hover-underline-animation:hover:after {
 	transform: scaleX(1);
 	transform-origin: bottom left;
-  }
+}
 .mobile-toggle i {
 	font-size: 1.8rem;
 }
@@ -328,7 +325,7 @@ header {
 	font-size: 1.1rem;
 	border-radius: 10px;
 }
-.connect-btn{
+.connect-btn {
 	margin-top: 1rem;
 }
 /*Tech stack*/
@@ -354,20 +351,25 @@ header {
 	flex-wrap: wrap;
 	margin-top: 1rem;
 }
-.about-stack li{
+.about-stack li {
 	margin-right: 1rem;
 	margin-bottom: 1rem;
-	border:1px solid var(--main-font-color);
-	padding:0.4rem;
-	border-radius:10px;
+	border: 1px solid var(--main-font-color);
+	padding: 0.4rem;
+	border-radius: 10px;
 	background: transparent; /* default color */
 
-    /* "to left" / "to right" - affects initial color */
-    background: linear-gradient(to left, transparent 50%, var(--main-font-color) 50%) right;
-    background-size: 200%;
-    transition: .5s ease-out;
+	/* "to left" / "to right" - affects initial color */
+	background: linear-gradient(
+			to left,
+			transparent 50%,
+			var(--main-font-color) 50%
+		)
+		right;
+	background-size: 200%;
+	transition: 0.5s ease-out;
 }
-.about-stack li:hover{
+.about-stack li:hover {
 	background-position: left;
 	color: var(--sub-color2);
 }
@@ -393,9 +395,9 @@ header {
 	margin-bottom: 0.5rem;
 	font-size: 1.2rem;
 }
-.project-img img{
-	border:1px solid var(--main-font-color);
-	padding:0.2rem;
+.project-img img {
+	border: 1px solid var(--main-font-color);
+	padding: 0.2rem;
 }
 .project-item p {
 	margin-bottom: 0.5rem;
@@ -410,8 +412,7 @@ header {
 }
 .tech-stack-used ul li {
 	margin-right: 0.5rem;
-	margin-top:0.5rem;
-	
+	margin-top: 0.5rem;
 }
 .project-item button,
 .project-item button:focus {
@@ -450,7 +451,7 @@ header {
 .contact-grid-item h3 {
 	margin-bottom: 1rem;
 	text-align: center;
-	font-size:2.5rem;
+	font-size: 2.5rem;
 }
 
 .contact-grid {
@@ -461,8 +462,40 @@ header {
 .contact-grid-item {
 	grid-column: span 6;
 }
-.contact-form {
-	text-align: center;
+.contact-form h2 {
+	margin-bottom:2rem;
+}
+
+.contact-form a{
+	color: var(--sub-font-color);
+	font-size: 1.1rem;
+	font-weight: bold;
+	border: 2px solid var(--sub-font-color);
+	padding:1rem;
+	border-radius:10px;
+}
+
+.contact-form a {
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	border: 1px solid var(--main-font-color);
+	padding: 1rem;
+	border-radius: 10px;
+	background: transparent; /* default color */
+
+	/* "to left" / "to right" - affects initial color */
+	background: linear-gradient(
+			to left,
+			transparent 50%,
+			var(--main-font-color) 50%
+		)
+		right;
+	background-size: 200%;
+	transition: 0.5s ease-out;
+}
+.contact-form a:hover {
+	background-position: left;
+	color: var(--sub-color2);
 }
 input[type='text'] {
 	margin: 0.3rem;
@@ -470,6 +503,7 @@ input[type='text'] {
 	width: 90%;
 	border: none;
 }
+
 textarea {
 	margin: 0.3rem;
 	padding: 0.7rem;
@@ -517,7 +551,7 @@ textarea {
 	padding: 0;
 	margin: 0;
 }
-.copyright{
+.copyright {
 	text-align: center;
 }
 /*tabs*/
@@ -562,20 +596,20 @@ input[type='radio'] {
 	.hero {
 		height: 70vh;
 	}
-	.nav-item a{
-		color:var(--main-font-color);
+	.nav-item a {
+		color: var(--main-font-color);
 	}
 	.nav-item {
-		color:var(--main-font-color);
+		color: var(--main-font-color);
 	}
-	
+
 	.nav-list {
 		display: flex;
 		flex-direction: row;
 		position: static;
 		height: 6rem;
 		background-color: transparent;
-		color:black;
+		color: black;
 		padding: 1rem;
 		justify-content: flex-end;
 	}
@@ -584,6 +618,9 @@ input[type='radio'] {
 		margin-left: 3rem;
 	}
 	.mobile-toggle {
+		display: none;
+	}
+	.nav-item .hamburger i {
 		display: none;
 	}
 	header {
@@ -597,10 +634,10 @@ input[type='radio'] {
 		order: 1;
 	}
 	.s1-grid {
-		margin-top:4rem;
+		margin-top: 4rem;
 	}
-	.project-grid{
-		margin-top:5rem;
+	.project-grid {
+		margin-top: 5rem;
 	}
 	.s1-grid-item div {
 		text-align: left;

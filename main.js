@@ -22,3 +22,8 @@ closeBtn.addEventListener('click', () => {
 		menucheck = false;
 	}
 });
+
+window.sr = ScrollReveal();
+sr.reveal('.animation', {
+	duration: 2000,
+});
