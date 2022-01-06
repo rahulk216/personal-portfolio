@@ -27,3 +27,8 @@ window.sr = ScrollReveal();
 sr.reveal('.animation', {
 	duration: 2000,
 });
+sr.reveal('.nav-animation', {
+	duration: 2000,
+	origin: 'top',
+	distance: '20px',
+});
